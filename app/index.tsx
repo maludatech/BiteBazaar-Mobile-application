@@ -20,9 +20,9 @@ const index = () => {
 
     return (
         <SafeAreaView style={{ backgroundColor: '#16423C', flex: 1 }}>
+            <StatusBar style="light" backgroundColor="#16423C"/>
             <ScrollView contentContainerStyle={{flexGrow: 1}}>
-                <StatusBar style="light" backgroundColor="#16423C"/>
-                <View className="flex flex-col gap-4 items-center justify-center font-rubik pt-16">
+                <View className="flex flex-col gap-3 items-center justify-center font-rubik py-14">
                     <Text className="text-secondary_color text-3xl uppercase">bitebazaar</Text>
                     <Image
                         source={require("../assets/images/bitebazaar-home.png")}
@@ -30,10 +30,10 @@ const index = () => {
                         resizeMode="contain"
                     />
                     <View className="flex flex-col gap-3 justify-center items-center">
-                        <Text className="text-white text-3xl">Food delivery and More</Text>
-                        <Text className="text-white text-lg">Your number 1 Naija Shawarma & Burger plug!</Text>
+                        <Text className="text-white text-4xl font-bold">Food delivery and More</Text>
+                        <Text className="text-white text-lg font-semibold">Your number 1 Naija Shawarma & Burger plug!</Text>
                     </View>
-                   <View className="justify-center items-center">
+                   <View className="justify-center items-center mt-2">
                         <TouchableOpacity className="bg-secondary_color p-4 w-full rounded-md" onPress={handlePress}>
                             <Text className="font-bold text-primary_color uppercase">Continue with Email</Text>
                         </TouchableOpacity>
